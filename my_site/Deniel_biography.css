@@ -1,0 +1,36 @@
+.header {
+    min-height: 100vh;
+    padding: 8px 50px;
+    background-color: #02f;
+    background-image: url("img/first.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.header_title {
+    text-transform: uppercase;
+    color: black;
+    align-self: center;
+}
+
+p {
+    font-family: "Liu Jian Mao Cao", cursive;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #2a2332;
+    margin-left: 10px;
+}
+
+h2 {
+    margin: 0px 0px 0px 350px;
+}
+
+ li{
+    font-family: "Liu Jian Mao Cao", cursive;
+    font-size: 15px;
+    margin-top: 10px;
+    color: #2a2332;
+    margin-left: 10px;
+    margin: 0px 0px 0px 300px;
+}
