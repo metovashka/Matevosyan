@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Swap(Mas, i) {
+        let temp = Mas[i];
+        Mas[i] = Mas[i - 1];
+        Mas[i - 1] = temp;
+    }
+
+    function ShakerSort(Mas, Start, N) {
+        let Left, Right, i;
+        Left = Start;
+        Right = N - 1;
+        while (Left <= Right) {
+            for (i = Right; i >= Left; i--)
+                if (Mas[i - 1] > Mas[i]) Swap(Mas, i);
+            Left++;
+            for (i = Left; i <= Right; i++)
+                if (Mas[i - 1] > Mas[i]) Swap(Mas, i);
+            Right--;
+        }
+        return Mas;
+    }
+
+    let Arr = [8, 9, 5, 7, 0, 3, 6, 1]
+    ShakerSort(Arr, 1, 8);
+    console.log(Arr);
+</script>
+
+</body>
+</html>
