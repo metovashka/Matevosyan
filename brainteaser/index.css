@@ -1,0 +1,15 @@
+.parent {
+    height: 200px;
+}
+
+.child {
+    display: inline-block;
+    width: 55px; height: 55px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background: deepskyblue;
+}
+
+.green {
+    background: greenyellow;
+}
