@@ -31,19 +31,12 @@
 <script>
 
     let block = document.querySelectorAll('.child');
-    
+
     for (let i = 0; i < 20; i++) {
         block[i].onclick = function () {
-            p = 1;
-            if (block[i].classList.contains('green')) {
-                block[i].classList.remove('green');
-            } else {
-                block[i].classList.add('green');
-            }
-
             let interval = i + 1;
 
-            for (let j = i + interval; j < 20; j += interval) {
+            for (j = i; j < 20; j += interval) {
                 if (block[j].classList.contains(('green'))) {
                     block[j].classList.remove('green');
                 } else
